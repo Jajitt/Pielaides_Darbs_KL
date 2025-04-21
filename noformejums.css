@@ -1,0 +1,35 @@
+.kluba-apraksts {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+
+  .kluba-apraksts ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .kluba-apraksts li {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+
+  .kluba-apraksts h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .kluba-apraksts p {
+    margin: 10px 0;
+    color: #555;
+  }
+
+  body {
+
+    background-color: rgb(198, 209, 102);
+  }

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<section class="kluba-apraksts">
+<center><h1>Salaspils biblotekas grāmatu kluba reģistrēšanās</h1></center>
+<br>
+<center><img src="static/atteli/biblioteka.jpg" alt="Biblioteka"></center>
+<br>
+<br>
+
+
+    <h2>📚 Kāpēc pievienoties Grāmatu Klubam?</h2>
+  <br>
+    <p>Vai Tev patīk lasīt? Vai vēlies dalīties ar citiem par aizraujošām grāmatām un atklāt jaunas, kas iedvesmo? Tad mūsu Grāmatu Klubs ir tieši Tev!</p>
+  <br>
+    <p><strong>Pievienojoties klubam, Tu iegūsi:</strong></p>
+  
+    <ul>
+      <li>🗣 Iespēju diskutēt par grāmatām ar citiem lasītājiem.</li>
+      <li>📖 Jaunus grāmatu ieteikumus no dažādiem žanriem.</li>
+      <li>✍️ Iespēju izvēlēties, kuru grāmatu lasīsim nākamo.</li>
+      <li>☕️ Draudzīgu vidi, kur vienkārši dalīties savās domās.</li>
+      <li>📆 Regulārus kluba pasākumus un tikšanās (klātienē vai tiešsaistē).</li>
+    </ul>
+  <br>
+    <p>Neatkarīgi no tā, vai lasīšana ir Tavs hobijs vai tikai nesen esi to atklājis – mēs priecāsimies par Tavu dalību!</p>
+  
+<br>
+<br>
+
+<center><h2>Grāmatu klubs – Reģistrācija</h2>
+<form method="POST" action="/registre">
+    Jūsu vārds: <input type="text" name="vards"><br><br>
+    Izvēlies kādu no piedāvātajām grāmatām:
+    <select name="gramata">
+        {% for g in gramatas %}
+        <option value="{{ g }}">{{ g }}</option>
+        {% endfor %}
+    </select><br><br>
+    <input type="submit" value="Pieteikties">
+</form></center>
+
+<br>
+<br>
+
+<li>📞 Ja Tev rodas kādi jautājumi, droši zvani uz mūsu telefona numuru: <strong>+371 22 867 192</strong></li>
+
+<li>📬 Mēs ar nepacietību gaidīsim tavu pieteikumu un būsim priecīgi tevi redzēt mūsu Grāmatu Klubā!</li>
+
+<li>Uz drīzu tikšanos! 🤍📖</li>
+
+</section>
+
+{% endblock %}

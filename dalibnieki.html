@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<br>
+<br>
+
+    <h1>Reģistrētie dalībnieki:</h1>
+<ul>
+    {% for d in dalibnieki %}
+    <li>{{ d.vards }} – {{ d.nosaukums }}</li>
+    {% endfor %}
+</ul>
+<a href="/">Atpakaļ</a>
+
+{% endblock %}
